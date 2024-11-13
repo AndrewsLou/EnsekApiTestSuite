@@ -25,6 +25,7 @@ namespace EnsekUiTests.Tests
             homePage.ClickBuyButton();
             //Check current page title
             orderPage.CheckCurrentPage("Buy - Candidate Test");
+            //Resets the data so test data is reliable
             orderPage.ResetData();
             // Store how many of energy type is available
             string currentQuantity = orderPage.GetCurrentQuantity(energyType);
