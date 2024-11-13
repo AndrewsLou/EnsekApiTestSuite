@@ -1,11 +1,6 @@
 using EnsekapiTestSuite.ResponseModels;
 using EnsekBddTests.ResponseModels;
-using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
-using Reqnroll;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http.Json;
 using System.Text.Json;
 
 namespace EnsekapiTestSuite.StepDefinitions
