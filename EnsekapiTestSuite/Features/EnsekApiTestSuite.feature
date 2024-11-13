@@ -2,7 +2,6 @@ Feature: EnsekApiTestSuite
 
 A set of tests for testing the Ensek candidate API endpoints
 
-@GetRequest
 Scenario: Get Request Sent to Energy Endpoint Returns 200 And List Of EnergyTypes
 When a Get request is sent to the Energy endpoint
 Then a 200 Ok Response is returned

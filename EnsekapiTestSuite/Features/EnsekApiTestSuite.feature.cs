@@ -75,14 +75,12 @@ namespace EnsekBddTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Get Request Sent to Energy Endpoint Returns 200 And List Of EnergyTypes")]
-        [NUnit.Framework.CategoryAttribute("GetRequest")]
         public async System.Threading.Tasks.Task GetRequestSentToEnergyEndpointReturns200AndListOfEnergyTypes()
         {
-            string[] tagsOfScenario = new string[] {
-                    "GetRequest"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Get Request Sent to Energy Endpoint Returns 200 And List Of EnergyTypes", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -92,13 +90,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 7
+#line 6
 await testRunner.WhenAsync("a Get request is sent to the Energy endpoint", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 8
+#line 7
 await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
-#line 9
+#line 8
  await testRunner.AndAsync("the Energy Data is deserialised", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
                 global::Reqnroll.Table table1 = new global::Reqnroll.Table(new string[] {
@@ -131,7 +129,7 @@ await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((
                             "0.5",
                             "-359",
                             "Litres"});
-#line 10
+#line 9
  await testRunner.AndAsync("the following Energy Data is returned", ((string)(null)), table1, "And ");
 #line hidden
             }
@@ -145,7 +143,7 @@ await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Creating Order Of Each Fuel", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 17
+#line 16
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -170,19 +168,19 @@ await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((
                 table2.AddRow(new string[] {
                             "Nuclear",
                             "1"});
-#line 18
+#line 17
  await testRunner.GivenAsync("the following order is sent to the Buy endpoint", ((string)(null)), table2, "Given ");
 #line hidden
-#line 24
+#line 23
  await testRunner.WhenAsync("the Orders endpoint is called", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 25
+#line 24
  await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
-#line 26
+#line 25
   await testRunner.AndAsync("the orders are deserialised", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 27
+#line 26
   await testRunner.AndAsync("the orders are added to the list of orders", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }
@@ -196,7 +194,7 @@ await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Creating An Order For An EnergyType That Does Not Exist", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 29
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -206,13 +204,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 30
+#line 29
 await testRunner.GivenAsync("the energy type \'99\' and quantity \'1\' is ordered", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 31
+#line 30
 await testRunner.WhenAsync("an order is made to the Buy endpoint", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 32
+#line 31
 await testRunner.ThenAsync("a 400 bad request is returned", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -226,7 +224,7 @@ await testRunner.ThenAsync("a 400 bad request is returned", ((string)(null)), ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Delete an existing order returns 200 and removes order", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 35
+#line 34
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -236,16 +234,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 36
+#line 35
 await testRunner.GivenAsync("an order exists", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 36
 await testRunner.WhenAsync("a Delete request is sent to the Delete Order endpoint", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 38
+#line 37
 await testRunner.ThenAsync("a 200 Ok Response is returned", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
-#line 39
+#line 38
  await testRunner.AndAsync("the order is removed", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
             }
